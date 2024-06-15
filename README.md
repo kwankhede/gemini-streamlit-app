@@ -1,6 +1,3 @@
-# gemini-streamlit-app
-
-
 # Gemini Streamlit App
 
 Explore the capabilities of the Gemini LLM and Vision models through this interactive Streamlit application.
