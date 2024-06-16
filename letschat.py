@@ -9,6 +9,14 @@ import google.generativeai as genai
 # Set page configuration
 st.set_page_config(page_title="Let's-Chit-Chat")
 
+# Adding favicon
+st.markdown(
+    """
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    """,
+    unsafe_allow_html=True,
+)
+
 # Custom CSS for styling and animations
 st.markdown(
     """
@@ -109,7 +117,6 @@ def get_gemini_response(question):
 st.sidebar.title("About Me")
 st.sidebar.markdown(
     """
-
     <div class="sidebar-content">
         <h3>Meet Kabir, Your Chatbot!</h3>
         <p>Hey there! I'm Kabir, your witty companion. Ask me anything and brace yourself for some fun!</p>
