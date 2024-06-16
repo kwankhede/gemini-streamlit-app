@@ -92,8 +92,13 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# Configure the generative AI model with the API key
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+# Ensure the API key is correctly retrieved from the environment variables
+api_key = os.getenv("GOOGLE_API_KEY")
+if api_key is None:
+    st.error("API key not found. Please set the GOOGLE_API_KEY environment variable.")
+    st.stop()
+
+genai.configure(api_key=api_key)
 
 # Function to load Gemini Pro model and get responses
 model = genai.GenerativeModel("gemini-pro")
