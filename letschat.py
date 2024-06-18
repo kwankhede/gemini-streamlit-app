@@ -7,7 +7,7 @@ import os
 import google.generativeai as genai
 
 # Set page configuration
-st.set_page_config(page_title="Let's-Chit-Chat")
+st.set_page_config(page_title="Let's-Chit-Chat",page_icon="favicon.ico")
 
 # Adding favicon
 st.markdown(
@@ -119,7 +119,7 @@ def get_gemini_response(question):
 
 
 # Initialize the Streamlit app
-st.set_page_config( page_icon="favicon.ico")
+
 
 st.sidebar.title("About Me")
 st.sidebar.markdown(
