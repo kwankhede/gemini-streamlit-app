@@ -119,6 +119,8 @@ def get_gemini_response(question):
 
 
 # Initialize the Streamlit app
+st.set_page_config( page_icon="favicon.ico")
+
 st.sidebar.title("About Me")
 st.sidebar.markdown(
     """
